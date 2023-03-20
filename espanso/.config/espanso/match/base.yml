@@ -1,0 +1,73 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  # Print the output of a shell command
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+# Print *.md yaml text
+  - trigger: ":#yaml"
+    replace: "--- \ntitle: \ndate: \n---"
+
+
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
+  #"\U0001F618""\U0001F618"
+  #
+  # signal kiss
+  - trigger: ":ko"
+    replace: "Kocham Cię 😘"
+
+  - trigger: ":bko"
+    replace: "Bardzo Cię Kocham Kochanie Moje :*"
+
+  - trigger: ":@md"
+    replace: "michal.danieluk@gmail.com"
+
+
+  - trigger: ":@cx"
+    replace: "michal.danieluk@cemex.com"
+
+  - trigger: ":@Mi"
+    replace: "Michał"
+
+  - trigger: ":@MD"
+    replace: "Michal Danieluk"
+
+  - trigger: ":@Da"
+    replace: "Danieluk"
+
+  - trigger: ":#cxmsg"
+    replace: "Dzień dobry, \n \nAdres platformy: https://trading.cemex.pl \nLogin: \nHasło: Cemex2023!! \n \nW razie problemów bardzo proszę o kontakt."
+
+  - trigger: ":#cxsub"
+    replace: "logowanie do Platformy CEMEX Trading"
