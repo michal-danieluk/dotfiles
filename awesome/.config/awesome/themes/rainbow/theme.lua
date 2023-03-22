@@ -267,7 +267,7 @@ function theme.at_screen_connect(s)
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
             spr,
-            theme.mpd.widget,
+--            theme.mpd.widget,
             --theme.mail.widget,
             --theme.fs.widget,
             volumewidget,
