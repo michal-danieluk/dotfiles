@@ -1,6 +1,6 @@
 [submodule "zshrc"]
-	path = zshrc
-	url = https://github.com/michal-danieluk/zshrc.git
+    path = zshrc
+    url = git@github.com:michal-danieluk/zshrc.git
 [submodule "kitty/.config/kitty/kitty-themes"]
 	path = kitty/.config/kitty/kitty-themes
 	url = https://github.com/dexpota/kitty-themes.git
