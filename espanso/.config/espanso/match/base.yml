@@ -71,3 +71,4 @@ matches:
 
   - trigger: ":#cxsub"
     replace: "logowanie do Platformy CEMEX Trading"
+

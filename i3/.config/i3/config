@@ -80,6 +80,8 @@ bindsym $mod+b exec firefox
 bindsym $mod+Shift+s exec signal-desktop
 #Obsidain
 bindsym $mod+Shift+o exec obsidian
+#whatsi
+bindsym $mod+Shift+i exec whatsie
 #Shutdown computer
 # bindsym $mod4+Shift+e exec shutdown -h
 #wallpapers
