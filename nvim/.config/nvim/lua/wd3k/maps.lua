@@ -46,3 +46,10 @@ vim.keymap.set('n', '<leader>w', '<C-w><C-w>')
 
 -- vim-maximazier
 vim.keymap.set('n', '<leader>sm', ':MaximizerToggle<CR>')
+-- write and quit
+vim.api.nvim_set_keymap("n", "QQ", ":q!<enter>", {noremap=false})
+vim.api.nvim_set_keymap("n", "WW", ":w!<enter>", {noremap=false})
+-- Git maps
+vim.api.nvim_set_keymap("n","<leader>ga", ":Git add . <CR>", {noremap=false})
+vim.api.nvim_set_keymap("n", "<leader>gc", ":Git commit -m \"", {noremap=false})
+vim.api.nvim_set_keymap("n", "<leader>gp", ":Git push -u origin HEAD<CR>", {noremap=false})

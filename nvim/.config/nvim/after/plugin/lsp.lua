@@ -10,9 +10,12 @@ lsp.ensure_installed({
 lsp.configure('lua-language-server', {
     settings = {
         Lua = {
+            runtime = {
+                version = 'LuaJIT',
+            },
             diagnostics = {
-                globals = { "vim" },
-            }
+                globals = { 'vim' },
+            },
         }
     }
 })
