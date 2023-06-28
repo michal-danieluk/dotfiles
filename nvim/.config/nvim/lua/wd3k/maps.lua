@@ -47,6 +47,7 @@ vim.keymap.set('n', '<leader>w', '<C-w><C-w>')
 -- vim-maximazier
 vim.keymap.set('n', '<leader>sm', ':MaximizerToggle<CR>')
 -- write and quit
+-- To jest ważne i będę musiał znowu to wysłać
 vim.api.nvim_set_keymap("n", "QQ", ":q!<enter>", {noremap=false})
 vim.api.nvim_set_keymap("n", "WW", ":w!<enter>", {noremap=false})
 -- Git maps
