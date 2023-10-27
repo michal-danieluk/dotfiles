@@ -85,7 +85,7 @@ bindsym $mod+Shift+i exec whatsie
 #Shutdown computer
 # bindsym $mod4+Shift+e exec shutdown -h
 #wallpapers
-bindsym $mod+Shift+w exec feh --bg-fill -z ~/Pliki/wallpapers/
+bindsym $mod+Shift+w exec feh --bg-fill -z ~/priv/wallpapers/
 # start dmenu (a program launcher)
 bindsym $mod+p exec alacritty -e mpv --no-video https://www.youtube.com/watch?v=AKp6rOlr03M
 bindsym $mod+d exec --no-startup-id dmenu_run
@@ -373,7 +373,7 @@ default_floating_border pixel 1
 # exec --no-startup-id nm-applet
 
 #exec --no-startup-id ~/.fehbg
-exec_always --no-startup-id feh --bg-fill -z ~/Pliki/wallpapers
+exec_always --no-startup-id feh --bg-fill -z ~/priv/wallpapers
 exec_always setxkbmap pl
 exec_always picom -b
 

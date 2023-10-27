@@ -2,9 +2,20 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
-lsp.ensure_installed({
-    'tsserver',
-})
+
+  require('mason').setup({})
+  require('mason-lspconfig').setup({
+    -- Replace the language servers listed here
+    -- with the ones you want to install
+    ensure_installed = {'tsserver', 'rust_analyzer', 'lua_ls'},
+    handlers = {
+      lsp.default_setup,
+    },
+  })
+
+
+
+
 
 -- Fix Undefined global 'vim'
 lsp.configure('lua-language-server', {
@@ -22,20 +33,42 @@ lsp.configure('lua-language-server', {
 
 
 local cmp = require('cmp')
-local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp.defaults.cmp_mappings({
-    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<C-y>'] = cmp.mapping.confirm({ select = true }),
-    ["<C-Space>"] = cmp.mapping.complete(),
+local cmp_action = lsp.cmp_action()
+
+cmp.setup({
+    window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+        },
+    mapping = cmp.mapping.preset.insert({
+      ['<C-Space>'] = cmp.mapping.complete(),
+      ['<C-p>'] = cmp_action.luasnip_jump_forward(),
+      ['<C-n>'] = cmp_action.luasnip_jump_backward(),
+      ['<C-y>'] = cmp.mapping.confirm({select = true}),
+      ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+      ['<C-d>'] = cmp.mapping.scroll_docs(4),
+    })
+
+
 })
 
-cmp_mappings['<Tab>'] = nil
-cmp_mappings['<S-Tab>'] = nil
 
-lsp.setup_nvim_cmp({
-    mapping = cmp_mappings
-})
+-- local cmp_select = { behavior = cmp.SelectBehavior.Select }
+-- local cmp_mappings = lsp.defaults.cmp_mappings({
+--     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+--     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+--     ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+--     ["<C-Space>"] = cmp.mapping.complete(),
+-- })
+
+-- cmp_mappings['<Tab>'] = nil
+-- cmp_mappings['<S-Tab>'] = nil
+
+--lsp.setup_nvim_cmp({
+--    mapping = cmp_mappings
+-- })
+
+
 
 lsp.set_preferences({
     suggest_lsp_servers = false,
