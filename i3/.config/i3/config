@@ -355,8 +355,8 @@ mode "$mode_gaps_left" {
 }
 
 
-gaps outer 5
-gaps inner 5
+gaps outer 2
+gaps inner 2
 # smart_gaps on
 #gaps inner all set 20
 #gaps outer current plus 5
