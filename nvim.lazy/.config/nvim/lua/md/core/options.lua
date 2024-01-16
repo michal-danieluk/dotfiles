@@ -17,7 +17,7 @@ opt.smartcase = true
 opt.breakindent = true
 
 -- Enbale muse mode
-opt.mouse = 'a'
+opt.mouse = "a"
 
 -- turn on termguicolors for nightfly colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
@@ -48,3 +48,5 @@ opt.wrap = false -- disable line wrapping
 
 --Set highlight on search
 opt.hlsearch = false
+
+opt.textwidth = 80

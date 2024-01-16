@@ -1,0 +1,279 @@
+"window.dynamic_title" = true
+
+[GruvboxDark.bright]
+black = "#928374"
+blue = "#83a598"
+cyan = "#8ec07c"
+green = "#b8bb26"
+magenta = "#d3869b"
+red = "#fb4934"
+white = "#ebdbb2"
+yellow = "#fabd2f"
+
+[GruvboxDark.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[GruvboxDark.normal]
+black = "#282828"
+blue = "#458588"
+cyan = "#689d6a"
+green = "#98971a"
+magenta = "#b16286"
+red = "#cc241d"
+white = "#a89984"
+yellow = "#d79921"
+
+[GruvboxDark.primary]
+background = "0x282828"
+foreground = "0xdfbf8e"
+
+[GruvboxDarkMedium.bright]
+black = "0x928374"
+blue = "0x7daea3"
+cyan = "0x89b482"
+green = "0xa9b665"
+magenta = "0xd3869b"
+red = "0xea6962"
+white = "0xdfbf8e"
+yellow = "0xe3a84e"
+
+[GruvboxDarkMedium.normal]
+black = "0x665c54"
+blue = "0x7daea3"
+cyan = "0x89b482"
+green = "0xa9b665"
+magenta = "0xd3869b"
+red = "0xea6962"
+white = "0xdfbf8e"
+yellow = "0xe78a4e"
+
+[GruvboxDarkMedium.primary]
+background = "0x282828"
+foreground = "0xdfbf8e"
+
+[Hepburn.bright]
+black = "0x928374"
+blue = "0x83a598"
+cyan = "0x8ec07c"
+green = "0xb8bb26"
+magenta = "0xd3869b"
+red = "0xfb4934"
+white = "0xebdbb2"
+yellow = "0xfabd2f"
+
+[Hepburn.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[Hepburn.normal]
+black = "0x282828"
+blue = "0x458588"
+cyan = "0x689d6a"
+green = "0x98971a"
+magenta = "0xb16286"
+red = "0xcc241d"
+white = "0xa89984"
+yellow = "0xd79921"
+
+[Hepburn.primary]
+background = "0x333333"
+foreground = "0xfbf1c7"
+
+[[Kaganawa.indexed_colors]]
+color = "0xffa066"
+index = 16
+
+[[Kaganawa.indexed_colors]]
+color = "0xff5d62"
+index = 17
+
+[Kaganawa.bright]
+black = "0x727169"
+Gblue = "0x7fb4ca"
+cyan = "0x7aa89f"
+green = "0x98bb6c"
+magenta = "0x938aa9"
+red = "0xe82424"
+white = "0xdcd7ba"
+yellow = "0xe6c384"
+
+[Kaganawa.colors.primary]
+background = "0x1f1f28"
+foreground = "0xdcd7ba"
+
+[Kaganawa.normal]
+black = "0x090618"
+blue = "0x7e9cd8"
+cyan = "0x6a9589"
+green = "0x76946a"
+magenta = "0x957fb8"
+red = "0xc34043"
+white = "0xc8c093"
+yellow = "0xc0a36e"
+
+[Kaganawa.selection]
+background = "0x2d4f67"
+foreground = "0xc8c093"
+
+[[KaganawaDragon.indexed_colors]]
+color = "#b6927b"
+index = 16
+
+[[KaganawaDragon.indexed_colors]]
+color = "#b98d7b"
+index = 17
+
+[KaganawaDragon.bright]
+black = "#a6a69c"
+blue = "#7FB4CA"
+cyan = "#7AA89F"
+green = "#87a987"
+magenta = "#938AA9"
+red = "#E46876"
+white = "#c5c9c5"
+yellow = "#E6C384"
+
+[KaganawaDragon.colors.primary]
+background = "#181616"
+foreground = "#c5c9c5"
+
+[KaganawaDragon.normal]
+black = "#0d0c0c"
+blue = "#8ba4b0"
+cyan = "#8ea4a2"
+green = "#8a9a7b"
+magenta = "#a292a3"
+red = "#c4746e"
+white = "#C8C093"
+yellow = "#c4b28a"
+
+[KaganawaDragon.selection]
+background = "#2D4F67"
+foreground = "#C8C093"
+
+[MonokaiPro.bright]
+black = "#727072"
+blue = "#FC9867"
+cyan = "#78DCE8"
+green = "#A9DC76"
+magenta = "#AB9DF2"
+red = "#FF6188"
+white = "#FCFCFA"
+yellow = "#FFD866"
+
+[MonokaiPro.normal]
+black = "#403E41"
+blue = "#FC9867"
+cyan = "#78DCE8"
+green = "#A9DC76"
+magenta = "#AB9DF2"
+red = "#FF6188"
+white = "#FCFCFA"
+yellow = "#FFD866"
+
+[MonokaiPro.primary]
+background = "#2D2A2E"
+foreground = "#FCFCFA"
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[[colors.indexed_colors]]
+color = "#b6927b"
+index = 16
+
+[[colors.indexed_colors]]
+color = "#b98d7b"
+index = 17
+
+[colors.bright]
+black = "#a6a69c"
+blue = "#7FB4CA"
+cyan = "#7AA89F"
+green = "#87a987"
+magenta = "#938AA9"
+red = "#E46876"
+white = "#c5c9c5"
+yellow = "#E6C384"
+
+[colors.colors.primary]
+background = "#181616"
+foreground = "#c5c9c5"
+
+[colors.normal]
+black = "#0d0c0c"
+blue = "#8ba4b0"
+cyan = "#8ea4a2"
+green = "#8a9a7b"
+magenta = "#a292a3"
+red = "#c4746e"
+white = "#C8C093"
+yellow = "#c4b28a"
+
+[colors.selection]
+background = "#2D4F67"
+foreground = "#C8C093"
+
+[cursor.style]
+blink-interval = 750
+blinking = "off"
+shape = "Beam"
+unfocused_hollow = true
+
+[font]
+size = 11
+
+[font.bold]
+family = "Hack"
+style = "Bold"
+
+[font.debug]
+persistent_logging = false
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "Hack"
+style = "Italic"
+
+[font.normal]
+family = "Hack"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "full"
+opacity = 0.92
+
+[window.dimensions]
+columns = 140
+lines = 38
+
+[window.padding]
+x = 10
+y = 10
