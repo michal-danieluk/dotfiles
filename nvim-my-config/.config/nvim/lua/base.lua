@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.o.scrolloff = 8
 
+vim.o.updatetime = 200
 -- Better editor UI
 vim.o.number = true
 vim.o.numberwidth = 2
