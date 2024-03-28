@@ -1,10 +1,50 @@
 return {
-	"nvim-lualine/lualine.nvim",
-	config = function()
-		require("lualine").setup({
-			options = {
-				theme = "dracula",
-			},
-		})
-	end,
+    "nvim-lualine/lualine.nvim",
+    config = function()
+        require("lualine").setup({
+            options = {
+                icons_enable = true,
+                components_separators = "|",
+                section_separators = "",
+                theme = "catppuccin",
+            },
+            sections = {
+                lualine_a = {
+                    {
+                        "buffers",
+                    },
+                },
+                lualine_x = {
+                    {
+                        require("noice").api.statusline.mode.get,
+                        cond = require("noice").api.statusline.mode.has,
+                        color = { fg = "#ff9e64" },
+                    },
+                },
+            },
+        })
+    end,
 }
+--
+
+--  require('lualine').setup {
+--    options = {
+--      icons_enabled = true,
+--      component_separators = '|',
+--      section_separators = '',
+--    },
+--    sections = {
+--      lualine_x = {
+--        {
+--  --        require("noice").api.statusline.mode.get,
+--  --        cond = require("noice").api.statusline.mode.has,
+--  --        color = { fg = "#ff9e64" },
+--        }
+--      },
+--      lualine_a = {
+--        {
+--          'buffers',
+--        }
+--      }
+--    }
+--  }
