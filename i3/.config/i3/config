@@ -9,12 +9,19 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
-set $mod4 Mod4
+set $mod Mod4
+set $mod4 Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Hack Nerd Font Bold 9
+
+
+exec_always setxkbmap -option altwin:swap_lalt_lwin 
+exec_always setxkbmap pl
+
+exec_always killall polybar
+exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -70,7 +77,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec wezterm
+# alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -94,6 +102,12 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 #change CAPSLOCK and CTRL
 bindsym $mod+$mod4+c exec setxkbmap -option ctrl:nocaps
 bindsym $mod+$mod4+Shift+c exec setxkbmap -option
+
+
+bindsym $mod+space exec --no-startup-id rofi -show drun -show-icons
+bindsym $mod+$mod4+space exec --no-startup-id rofi -show ssh -show-icons
+
+
 
 bindsym $mod+Ctrl+space exec --no-startup-id rofi -theme gruvbox-dark-soft -font "hack 10" -show drun -show-icons
 bindsym $mod+Shift+Ctrl+space exec --no-startup-id rofi -theme gruvbox-dark-soft -font "hack 10" -show combi -show-icons
@@ -147,7 +161,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -356,7 +370,7 @@ mode "$mode_gaps_left" {
 }
 
 
-gaps outer 2
+gaps outer 1
 gaps inner 2
 # smart_gaps on
 #gaps inner all set 20
@@ -375,8 +389,8 @@ default_floating_border pixel 1
 
 #exec --no-startup-id ~/.fehbg
 exec_always --no-startup-id feh --bg-fill -z ~/priv/wallpapers
-exec_always setxkbmap pl
-exec_always picom -b
+exec_always --no-startup-id espanso 
+# exec_always picom -b
 
 ######################
 # theme
@@ -439,23 +453,24 @@ set $border_red #770000
 # font pango:Hack 8
 
 #start of bar section
-bar {
-    position top #bottom
-    status_command i3status -c ~/.config/i3status/i3status.conf
+# bar {
+# position top 
+#bottom
+#    status_command i3status -c ~/.config/i3status/i3status.conf
 #    status_command i3blocks -c ~/.config/i3/i3blocks.conf
-    colors {
-        # bar background color
-        background $bg
-        # text color used for blocks that do not have a color specified.
-        statusline $yellow
-        # workspaces section
-        #                    border  backgr. text
-        focused_workspace    $aqua $aqua $darkgray
-        inactive_workspace   $darkgray $darkgray $yellow
-        active_workspace     $darkgray $darkgray $yellow
-        urgent_workspace     $red $red $bg
-    }
-}
+#      colors {
+#         # bar background color
+#         background $bg
+#         # text color used for blocks that do not have a color specified.
+#         statusline $yellow
+#         # workspaces section
+#         #                    border  backgr. text
+#         focused_workspace    $aqua $aqua $darkgray
+#         inactive_workspace   $darkgray $darkgray $yellow
+#         active_workspace     $darkgray $darkgray $yellow
+#         urgent_workspace     $red $red $bg
+#     }
+# }
 #end of bar section
 
 #start of window title bars & borders section
