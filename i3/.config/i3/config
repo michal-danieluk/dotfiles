@@ -90,7 +90,7 @@ bindsym $mod+Shift+s exec signal-desktop
 #Obsidain
 bindsym $mod+Shift+o exec obsidian
 #whatsi
-bindsym $mod+Shift+i exec whatsie
+bindsym $mod+Shift+i exec zapzap
 #Shutdown computer
 # bindsym $mod4+Shift+e exec shutdown -h
 #wallpapers
@@ -109,9 +109,8 @@ bindsym $mod+$mod4+space exec --no-startup-id rofi -show ssh -show-icons
 
 
 
-bindsym $mod+Ctrl+space exec --no-startup-id rofi -theme gruvbox-dark-soft -font "hack 10" -show drun -show-icons
-bindsym $mod+Shift+Ctrl+space exec --no-startup-id rofi -theme gruvbox-dark-soft -font "hack 10" -show combi -show-icons
-bindsym $mod+Ctrl+f exec --no-startup-id rofi -theme gruvbox-dark-soft -font "hack 10" -show filebrowser -show-icons
+bindsym $mod+Shift+Ctrl+space exec --no-startup-id rofi -show combi -show-icons
+bindsym $mod+Ctrl+space exec --no-startup-id rofi -font -show filebrowser -show-icons
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a

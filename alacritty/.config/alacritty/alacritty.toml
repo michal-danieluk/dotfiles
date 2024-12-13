@@ -1,8 +1,4 @@
 
-import = [
-  "~/dotfiles/alacritty/.config/alacritty/themes/themes/catppuccin_mocha.toml"
-]
-
 
 [font]
 size = 12
@@ -47,8 +43,8 @@ history = 10000
 multiplier = 3
 
 [window]
-decorations = "full"
-opacity = 0.92
+decorations = "None"
+opacity = 0.9
 
 [window.dimensions]
 columns = 140
@@ -57,3 +53,9 @@ lines = 38
 [window.padding]
 x = 10
 y = 10
+
+[general]
+
+import = [
+  "~/dotfiles/alacritty/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+]
